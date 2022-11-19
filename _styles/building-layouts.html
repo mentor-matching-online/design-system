@@ -1,0 +1,82 @@
+---
+title: Building layouts
+layout: design-system
+meta-info: false
+categories:
+- styles
+excerpt: "Use these components to help you set up page layouts."
+---
+
+<h2 class="heading-lg">Screen sizes</h2>
+
+<p>Design for small screens first, starting with a single-column layout.</p>
+
+<p>For most types of page, we recommend using either a ‘two-thirds’ or a ‘two-thirds and one third layout’. That stops lines of text getting so long that the page becomes difficult to read on desktop devices. This would usually mean no more than 75 characters per line.</p>
+
+<p>Never make assumptions about what devices people are using. Design for different screen sizes rather than specific devices.</p>
+
+<p>The default maximum page width is 1020px.</p>
+
+<hr>
+
+<h2 class="heading-lg">Page wrappers</h2>
+
+<h3 class="heading-md">Limit the page width</h3>
+
+<p>To set up your layout you will need to create 2 wrappers. The first should have the class <code>width-container</code>, which sets the maximum width of the content but does not add any vertical margin or padding.</p>
+
+<p>If your design requires them, you should place components such as breadcrumbs or back link inside this wrapper so that they sit directly underneath the header.</p>
+
+<h3 class="heading-md">Add vertical space</h3>
+
+<p>Within <code>width-container</code> you should add the <code>main-wrapper</code> class to your <code>&lt;main&gt;</code> element. This adds responsive padding to the top and bottom of the page and will be the container for your main content.</p>
+
+	<p>If you’re not using the breadcrumbs, back link or phase banner components in your design, add the correct amount of vertical padding above the content by adding one of the following to your <code>&lt;main&gt;</code> element:</p>
+
+	<ul class="list--bullet">
+		<li>the <code>main-wrapper--auto-spacing</code> class</li>
+		<li>the <code>main-wrapper--lg</code> class - if <code>main-wrapper--auto-spacing</code> does not work for your service</li>
+	</ul>
+
+<details>
+	<summary>HTML code</summary>
+
+		<pre><code>&lt;div class="width-container"&gt;
+&lt;a href="#" class="back-link"&gt;Back&lt;/a&gt;
+
+&lt;main class="main-wrapper"&gt;
+
+	&lt;!-- content goes here --&gt;
+
+&lt;/main&gt;
+&lt;/div&gt;</code></pre>
+</details>
+
+<hr>
+
+<h2 class="heading-lg">Grid system</h2>
+
+<p>Use the grid system to lay out the content on all pages.</p>
+
+<p>Most pages follow a two-thirds to one-third layout but the grid system allows for a number of additional combinations when necessary.</p>
+
+<p>Your main content should always be in a two-thirds column even if you’re not using a corresponding one-third column for secondary content.</p>
+
+<h3 class="heading-md">Using the grid system</h3>
+
+<p>The grid is structured with a <code>grid-row wrapper</code> which acts as a row to contain your grid columns.</p>
+
+<p>You can add columns inside this wrapper to create your layout. To define your columns add the class beginning with <code>grid-column-</code> to a new container followed by the width, for example <code>grid-column-one-third</code> to apply your desired width.</p>
+
+<p>It is possible to nest grids.</p>
+
+<p>The available grid column sizes are:</p>
+
+<ul class="list--bullet">
+	<li><code>grid-column-full</code></li>
+	<li><code>grid-column-one-quarter</code></li>
+	<li><code>grid-column-one-third</code></li>
+	<li><code>grid-column-one-half</code></li>
+	<li><code>grid-column-two-thirds</code></li>
+	<li><code>grid-column-three-quarters</code></li>
+</ul>

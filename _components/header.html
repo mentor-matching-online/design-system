@@ -1,0 +1,193 @@
+---
+title: Header
+excerpt: "Headers appear at the top of every page."
+
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+
+<p>The header shows users that they are on the website and other things they can visit. It is included in the default page template.</p>
+
+<h2>When to use this component</h2>
+
+<p>Use the header on every page.</p>
+
+<details>
+	<summary>Formatted example</summary>
+
+	<header class="header" role="banner">
+		<div class="header--container width-container">
+			<div class="header--logo">
+			  <a href="http://localhost:4000" class="header--logotype--link">
+				<span class="header--logotype--text">Civil Service</span>
+				<span class="header--logotype--text">LGBT+ Network</span>
+			  </a>
+			</div>
+			<div class="header--content">
+
+				<button type="button" id="menu-button" class="header--menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" onclick="toggleMenu()">Menu</button>
+
+				<nav>
+					<ul id="navigation" class="header--navigation" aria-label="Navigation menu">
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/news" title="Visit the News page">
+									News
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/events" title="Visit the Events page">
+									Events
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/topics" title="Visit the Topics page">
+									Topics
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/publications" title="Visit the Publications page">
+									Publications
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/consultations" title="Visit the Consultations page">
+									Consultations
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/networks" title="Visit the Networks page">
+									Networks
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/team" title="See who we are">
+									Our team
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/about" title="Learn more about us">
+									About
+								</a>
+							</li>
+
+
+
+
+
+
+
+							<li class="header--navigation-item">
+								<a class="header--link" href="https://www.civilservice.lgbt/join-us" title="Visit the membership registration page">
+									Join us
+								</a>
+							</li>
+
+
+
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</header>
+
+</details>
+
+<details>
+	<summary>HTML code</summary>
+
+	<pre><code>&lt;header class="header" role="banner"&gt;
+	&lt;div class="header--container width-container"&gt;
+		&lt;div class="header--logo"&gt;
+		  &lt;a href="http://localhost:4000" class="header--logotype--link"&gt;
+			&lt;span class="header--logotype--text"&gt;Civil Service&lt;/span&gt;
+			&lt;span class="header--logotype--text"&gt;LGBT+ Network&lt;/span&gt;
+		  &lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="header--content"&gt;
+
+			&lt;button type="button" id="menu-button" class="header--menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu" onclick="toggleMenu()"&gt;Menu&lt;/button&gt;
+
+			&lt;nav&gt;
+				&lt;ul id="navigation" class="header--navigation" aria-label="Navigation menu"&gt;
+
+						&lt;li class="header--navigation-item"&gt;
+							&lt;a class="header--link" href="https://www.civilservice.lgbt/news" title="Visit the News page"&gt;
+								News
+							&lt;/a&gt;
+						&lt;/li&gt;
+
+						&lt;li class="header--navigation-item"&gt;
+							&lt;a class="header--link" href="https://www.civilservice.lgbt/events" title="Visit the Events page"&gt;
+								Events
+							&lt;/a&gt;
+						&lt;/li&gt;
+
+						&lt;!-- etc etc etc --&gt;
+
+				&lt;/ul&gt;
+			&lt;/nav&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</details>

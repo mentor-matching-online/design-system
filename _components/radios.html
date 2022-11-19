@@ -1,0 +1,132 @@
+---
+title: Radio buttons
+excerpt: "Radio buttons allow users to select one option from a pre-defined list as part of a form."
+
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+
+<h2>When to use this component</h2>
+
+<p>Use the radios component when users can only select one option from a list.</p>
+
+<h2>When not to use this component</h2>
+
+<p>Do not use the radios component if users might need to select more than one option. In this case, you should use the checkboxes component instead.</p>
+
+<details>
+    <summary>Formatted example</summary>
+
+
+    <fieldset id="where-do-you-live--fieldset" aria-describedby="where-do-you-live--hint" class="fieldset">
+
+        <legend id="where-do-you-live--title">
+            Where do you live?
+        </legend>
+        <p id="where-do-you-live--hint" class="hint">Select one option</p>
+
+        <div class="radios">
+
+            <div class="radios--item">
+                <input class="radios--input" id="where-do-you-live--england" name="where-do-you-live" type="radio" value="england">
+                <label class="radios--label" for="where-do-you-live--england">
+                    England
+                </label>
+            </div>
+
+            <div class="radios--item">
+                <input class="radios--input" id="where-do-you-live--northern-ireland" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="radios--label" for="where-do-you-live--northern-ireland">
+                    Northern Ireland
+                </label>
+            </div>
+
+            <div class="radios--item">
+                <input class="radios--input" id="where-do-you-live--scotland" name="where-do-you-live" type="radio" value="scotland">
+                <label class="radios--label" for="where-do-you-live--scotland">
+                    Scotland
+                </label>
+            </div>
+
+            <div class="radios--item">
+                <input class="radios--input" id="where-do-you-live--wales" name="where-do-you-live" type="radio" value="wales">
+                <label class="radios--label" for="where-do-you-live--wales">
+                    Wales
+                </label>
+            </div>
+
+            <div class="radios--item">
+                <input class="radios--input" id="where-do-you-live--outside-the-uk" name="where-do-you-live" type="radio" value="outside-the-uk">
+                <label class="radios--label" for="where-do-you-live--outside-the-uk">
+                    Outside the UK
+                    <div id="where-do-you-live--outside-the-uk--item-hint" class="hint radios-hint">
+                        Select this option if you are posted overseas
+                    </div>
+                </label>
+
+            </div>
+
+        </div>
+
+    </fieldset>
+
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;fieldset id="where-do-you-live--fieldset" aria-describedby="where-do-you-live--hint" class="fieldset"&gt;
+
+&lt;legend id="where-do-you-live--title"&gt;
+    Where do you live?
+&lt;/legend&gt;
+&lt;p id="where-do-you-live--hint" class="hint"&gt;Select one option&lt;/p&gt;
+
+&lt;div class="radios"&gt;
+
+    &lt;div class="radios--item"&gt;
+        &lt;input class="radios--input" id="where-do-you-live--england" name="where-do-you-live" type="radio" value="england"&gt;
+        &lt;label class="radios--label" for="where-do-you-live--england"&gt;
+            England
+        &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="radios--item"&gt;
+        &lt;input class="radios--input" id="where-do-you-live--northern-ireland" name="where-do-you-live" type="radio" value="northern-ireland"&gt;
+        &lt;label class="radios--label" for="where-do-you-live--northern-ireland"&gt;
+            Northern Ireland
+        &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="radios--item"&gt;
+        &lt;input class="radios--input" id="where-do-you-live--scotland" name="where-do-you-live" type="radio" value="scotland"&gt;
+        &lt;label class="radios--label" for="where-do-you-live--scotland"&gt;
+            Scotland
+        &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="radios--item"&gt;
+        &lt;input class="radios--input" id="where-do-you-live--wales" name="where-do-you-live" type="radio" value="wales"&gt;
+        &lt;label class="radios--label" for="where-do-you-live--wales"&gt;
+            Wales
+        &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class="radios--item"&gt;
+        &lt;input class="radios--input" id="where-do-you-live--outside-the-uk" name="where-do-you-live" type="radio" value="outside-the-uk"&gt;
+        &lt;label class="radios--label" for="where-do-you-live--outside-the-uk"&gt;
+            Outside the UK
+            &lt;div id="where-do-you-live--outside-the-uk--item-hint" class="hint radios-hint"&gt;
+                Select this option if you are posted overseas
+            &lt;/div&gt;
+        &lt;/label&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/fieldset&gt;</code></pre>
+</details>

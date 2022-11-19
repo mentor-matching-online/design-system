@@ -1,0 +1,99 @@
+---
+title: Breadcrumbs
+excerpt: "Breadcrumbs help users to understand where they are in the website's structure and move between levels."
+
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+
+<p>The breadcrumbs component helps users to understand where they are within a website’s structure and move between levels.</p>
+
+<h2>When to use this component</h2>
+
+<p>Use the breadcrumbs component when you need to help users understand and move between the multiple levels of a website.</p>
+
+<h2>When not to use this component</h2>
+
+<p>Do not use the breadcrumbs component on websites with a flat structure, or to show progress through a linear journey or transaction.</p>
+
+<p>Do not add a breadcrumbs if you are also using a <a href="/back-link">back link</a>.</p>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <div class="breadcrumbs">
+        <ol class="breadcrumbs--list">
+            <li class="breadcrumbs--list-item">
+                <a class="breadcrumbs--link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs--list-item">
+                <a class="breadcrumbs--link" href="#">About us</a>
+            </li>
+            <li class="breadcrumbs--list-item">
+                <a class="breadcrumbs--link" href="#">Our team</a>
+            </li>
+        </ol>
+    </div>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;div class="breadcrumbs"&gt;
+    &lt;ol class="breadcrumbs--list"&gt;
+        &lt;li class="breadcrumbs--list-item"&gt;
+            &lt;a class="breadcrumbs--link" href="#"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="breadcrumbs--list-item"&gt;
+            &lt;a class="breadcrumbs--link" href="#"&gt;About us&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="breadcrumbs--list-item"&gt;
+            &lt;a class="breadcrumbs--link" href="#"&gt;Our team&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</code></pre>
+</details>
+
+<details>
+    <summary>Markdown</summary>
+
+    <pre><code># Add the following to the page front matter.
+# In most cases, you do not need to add:
+# - a link to the home page
+# - a link to the name of the current collection
+
+breadcrumbs:
+- title: Item name
+  url: /page-path
+</code></pre>
+</details>
+
+<h2>Disable breadcrumbs</h2>
+
+<p>If you are using the Jekyll template, some pages will automatically add breadcrumbs. You can disable the breadcrumbs by changing the Markdown in the file front matter.</p>
+
+<details>
+  <summary>Markdown</summary>
+
+  <pre><code># Add the following to the page front matter:
+
+breadcrumbs: false
+</code></pre>
+</details>
+
+<h2>Override breadcrumbs</h2>
+
+<p>If you are using the Jekyll template, some pages will automatically add a link to the home page, and the collection of the current page. You can override the latter by changing the Markdown in the file front matter.</p>
+
+<details>
+  <summary>Markdown</summary>
+
+  <pre><code># Add the following to the page front matter:
+
+breadcrumbs-override: true
+</code></pre>
+</details>
+

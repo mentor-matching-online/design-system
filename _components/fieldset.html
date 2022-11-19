@@ -1,0 +1,46 @@
+---
+title: Fieldset
+excerpt: "Fieldsets group together related inputs on a form."
+
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+
+<p>Use the fieldset component to group related form inputs.</p>
+
+<h2>When to use this component</h2>
+
+<p>Use the fieldset component when you need to show a relationship between multiple form inputs. </p>
+
+<p>You can use the <code>legend-</code> class to adjust the size of the <code>&lt;legend&gt;</code>. Available sizes are:</p>
+<ul>
+	<li><code>legend-xl</code></li>
+	<li><code>legend-lg</code></li>
+	<li><code>legend-md</code></li>
+	<li><code>legend-sm</code></li>
+</ul>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <fieldset id="fieldset-group-name" aria-describedby="fieldset-group-title">
+        <legend id="fieldset-group-title" class="legend-xl">
+            Fieldset legend
+        </legend>
+        <em>&lt;!-- form fields go here --&gt;</em>
+    </fieldset>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;fieldset id="fieldset-group-name" aria-describedby="fieldset-group-title"&gt;
+    &lt;legend id="fieldset-group-title" class="legend-lg"&gt;
+        Fieldset legend
+    &lt;/legend&gt;
+    <em>&lt;!-- form fields go here --&gt;</em>
+&lt;/fieldset&gt;</code></pre>
+</details>

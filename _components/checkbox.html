@@ -1,0 +1,126 @@
+---
+title: Checkboxes
+excerpt: "Checkboxes allow users to select more than one option as part of a form."
+
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+
+<p>Let users select one or more options by using the checkboxes component.</p>
+
+<h2>When to use this component</h2>
+
+<p>Use the checkboxes component when you need to help users:</p>
+
+<ul class="list--bullet">
+    <li>select multiple options from a list</li>
+    <li>toggle a single option on or off</li>
+</ul>
+
+<h2>When not to use this component</h2>
+
+<p>Do not use the checkboxes component if users can only choose one option from a selection. In this case, use the <a href="/design-system/radios" class="link">radios component</a>.</p>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <fieldset id="events-in--fieldset" class="fieldset" aria-describedby="events-in--hint">
+
+        <legend id="fieldset-group--title">
+            You want to hear about events taking place in:
+        </legend>
+        <p id="events-in--hint" class="hint">
+            Select all that apply.
+        </p>
+        <div class="checkboxes">
+            <div class="checkboxes--item">
+                <input class="checkboxes--input" id="events-in--england" name="events-in" type="checkbox" value="england">
+                <label class="checkboxes--label" for="events-in--england">
+                    England
+                </label>
+            </div>
+            <div class="checkboxes--item">
+                <input class="checkboxes--input" id="events-in--northern-ireland" name="events-in" type="checkbox" value="northern-ireland">
+                <label class="checkboxes--label" for="events-in--northern-ireland">
+                    Northern Ireland
+                </label>
+            </div>
+            <div class="checkboxes--item">
+                <input class="checkboxes--input" id="events-in--scotland" name="events-in" type="checkbox" value="scotland">
+                <label class="checkboxes--label" for="events-in--scotland">
+                    Scotland
+                </label>
+            </div>
+            <div class="checkboxes--item">
+                <input class="checkboxes--input" id="events-in--wales" name="events-in" type="checkbox" value="wales">
+                <label class="checkboxes--label" for="events-in--wales">
+                    Wales
+                </label>
+            </div>
+            <div class="checkboxes--item">
+                <input class="checkboxes--input" id="events-in--overseas" name="events-in" type="checkbox" value="overseas">
+                <label class="checkboxes--label" for="events-in--overseas">
+                    Outside the UK
+                    <div id="events-in--overseas--item-hint" class="hint checkboxes--hint">
+                        Select this option if you are posted overseas
+                    </div>
+                </label>
+            </div>
+        </div>
+
+    </fieldset>
+
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;fieldset class="fieldset" id="events-in" aria-describedby="events-in--hint"&gt;
+
+    &lt;legend&gt;
+        You want to hear about events taking place in:
+    &lt;/legend&gt;
+    &lt;p id="events-in--hint" class="hint"&gt;
+        Select all that apply.
+    &lt;/p&gt;
+    &lt;div class="checkboxes"&gt;
+        &lt;div class="checkboxes--item"&gt;
+            &lt;input class="checkboxes--input" id="events-in--england" name="events-in" type="checkbox" value="england"&gt;
+            &lt;label class="checkboxes--label" for="events-in--england"&gt;
+                England
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="checkboxes--item"&gt;
+            &lt;input class="checkboxes--input" id="events-in--northern-ireland" name="events-in" type="checkbox" value="northern-ireland"&gt;
+            &lt;label class="checkboxes--label" for="events-in--northern-ireland"&gt;
+                Northern Ireland
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="checkboxes--item"&gt;
+            &lt;input class="checkboxes--input" id="events-in--scotland" name="events-in" type="checkbox" value="scotland"&gt;
+            &lt;label class="checkboxes--label" for="events-in--scotland"&gt;
+                Scotland
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="checkboxes--item"&gt;
+            &lt;input class="checkboxes--input" id="events-in--wales" name="events-in" type="checkbox" value="wales"&gt;
+            &lt;label class="checkboxes--label" for="events-in--wales"&gt;
+                Wales
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="checkboxes--item"&gt;
+            &lt;input class="checkboxes--input" id="events-in--overseas" name="events-in" type="checkbox" value="overseas"&gt;
+            &lt;label class="checkboxes--label" for="overseas"&gt;
+                Outside the UK
+                &lt;div id="events-in--overseas--item-hint" class="hint checkboxes-hint"&gt;
+                    Select this option if you are posted overseas
+                &lt;/div&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/fieldset&gt;</code></pre>
+</details>

@@ -1,0 +1,164 @@
+---
+title: Buttons
+excerpt: "Buttons help users carry out actions like submitting a form or saving their information."
+
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+<p>Use the button component to help users carry out an action like submitting a form or saving their information.</p>
+
+<h2>Default buttons</h2>
+
+<p>Use a default button for the main call to action on a page.</p>
+
+<p>Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
+
+    <details>
+        <summary>Formatted example</summary>
+
+        <button class="button">
+            Register
+        </button>
+    </details>
+
+    <details>
+        <summary>HTML code</summary>
+
+        <pre><code>&lt;button class="button"&gt;
+    Submit
+&lt;/button&gt;</code></pre>
+    </details>
+
+<h2>Secondary buttons</h2>
+
+<p>Use secondary buttons for secondary calls to action on a page.</p>
+
+<p>Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages.</p>
+
+    <details>
+        <summary>Formatted example</summary>
+
+        <button class="button button--secondary">
+            Reset
+        </button>
+    </details>
+
+    <details>
+        <summary>HTML code</summary>
+
+        <pre><code>&lt;button class="button button--secondary"&gt;
+    Reset
+&lt;/button&gt;</code></pre>
+    </details>
+
+<h2>Warning buttons</h2>
+
+<p>Warning buttons are designed to make users think carefully before they use them. They only work if used very sparingly.</p>
+
+<p>Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.</p>
+
+<p>When letting users carry out an action like this, it’s a good idea to include an additional step which asks them to confirm it.</p>
+
+<p>In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation.</p>
+
+<p>Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.</p>
+
+    <details>
+        <summary>Formatted example</summary>
+
+        <button class="button button--warning">
+            Warning button
+        </button>
+    </details>
+
+    <details>
+        <summary>HTML code</summary>
+
+        <pre><code>&lt;button class="button button--warning"&gt;
+    Warning button
+&lt;/button&gt;</code></pre>
+    </details>
+
+<h2>Disabled buttons</h2>
+
+<p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+
+<p>Only use disabled buttons if research shows it makes the user interface easier to understand.</p>
+
+    <details>
+        <summary>Formatted example</summary>
+
+        <button disabled="disabled" aria-disabled="true" class="button button--disabled">
+            Disabled button
+        </button>
+    </details>
+
+    <details>
+        <summary>HTML code</summary>
+
+        <pre><code>&lt;button disabled="disabled" aria-disabled="true" class="button button--secondary"&gt;
+    Disabled button
+&lt;/button&gt;</code></pre>
+    </details>
+    
+<h2>Action buttons</h2>
+
+<p>Action buttons prompt users to continue to the next step of a journey or process.</p>
+
+<p>Only use action buttons once per page.</p>
+
+    <details>
+        <summary>Formatted example</summary>
+
+        <a href="#" class="button button--action" role="button" draggable="false">
+          Start now
+        </a>
+    </details>
+
+    <details>
+        <summary>HTML code</summary>
+
+        <pre><code>&lt;a href="#" class="button button--action" role="button" draggable="false"&gt;
+  Start now
+&lt;/a&gt;</code></pre>
+    </details>
+
+<h2>Grouping buttons</h2>
+
+<p>Use a button group when two or more buttons are placed together.</p>
+
+    <details>
+        <summary>Formatted example</summary>
+
+
+        <div class="button-group">
+
+            <button class="button">
+                Register
+            </button>
+
+            <button class="button button--secondary">
+                Reset
+            </button>
+
+        </div>
+    </details>
+
+    <details>
+        <summary>HTML code</summary>
+
+        <pre><code>&lt;div class="button-group"&gt;
+
+    &lt;button class="button"&gt;
+        Register
+    &lt;/button&gt;
+
+    &lt;button class="button button--secondary"&gt;
+        Reset
+    &lt;/button&gt;
+
+&lt;/div&gt;</code></pre>
+    </details>

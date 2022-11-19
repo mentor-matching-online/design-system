@@ -1,0 +1,88 @@
+---
+title: Date inputs
+excerpt: "Date inputs help users to enter a date when submitting forms."
+layout: design-system
+meta-info: false
+categories:
+- components
+---
+
+
+<p>Use the date input component to help users enter a date.</p>
+
+<h2>When to use this component</h2>
+
+<p>Use the date input component whenever you’re asking users to enter a date.</p>
+
+<h2>When not to use this component</h2>
+
+<p>Do not use the date input component if users are unlikely to know the exact date of the event you’re asking about.</p>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <fieldset class="fieldset" role="group" aria-describedby="post-publish-date-hint">
+
+        <legend class="fieldset-legend">
+            On what date is the post meant to be published?
+        </legend>
+        <div id="post-publish-date-hint" class="hint">
+            For example – 31 12 2021
+        </div>
+
+        <div id="post-publish-date" class="date-input">
+
+            <div class="date-input--item">
+                <label class="date-input--label" for="post-day">Day</label>
+                <input class="input date-input date-input--day" id="post-day" name="post-day" placeholder="DD" minlength="2" maxlength="2" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+
+            <div class="date-input--item">
+                <label class="date-input--label" for="post-month">Month</label>
+                <input class="input date-input date-input--month" id="post-month" name="post-month" placeholder="MM" minlength="2" maxlength="2" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+
+            <div class="date-input--item">
+                <label class="date-input--label" for="post-year">Year</label>
+                <input class="input date-input date-input--year" id="post-year" name="post-year" placeholder="YYYY" minlength="4" maxlength="4" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+
+        </div>
+
+    </fieldset>
+
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;fieldset class="fieldset" role="group" aria-describedby="post-publish-date-hint"&gt;
+
+		&lt;legend class="fieldset-legend"&gt;
+			On what date is the post meant to be published?
+		&lt;/legend&gt;
+		&lt;div id="post-publish-date-hint" class="hint"&gt;
+			For example – 31 12 2021
+		&lt;/div&gt;
+
+		&lt;div id="post-publish-date" class="date-input"&gt;
+
+			&lt;div class="date-input--item"&gt;
+				&lt;label class="date-input--label" for="post-day"&gt;Day&lt;/label&gt;
+				&lt;input class="input date-input date-input--day" id="post-day" name="post-day" placeholder="DD" minlength="2" maxlength="2" type="text" pattern="[0-9]*" inputmode="numeric"&gt;
+			&lt;/div&gt;
+
+			&lt;div class="date-input--item"&gt;
+				&lt;label class="date-input--label" for="post-month"&gt;Month&lt;/label&gt;
+				&lt;input class="input date-input date-input--month" id="post-month" name="post-month" placeholder="MM" minlength="2" maxlength="2" type="text" pattern="[0-9]*" inputmode="numeric"&gt;
+			&lt;/div&gt;
+
+			&lt;div class="date-input--item"&gt;
+				&lt;label class="date-input--label" for="post-year"&gt;Year&lt;/label&gt;
+				&lt;input class="input date-input date-input--year" id="post-year" name="post-year" placeholder="YYYY" minlength="4" maxlength="4" type="text" pattern="[0-9]*" inputmode="numeric"&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/fieldset&gt;</code></pre>
+</details>

@@ -1,0 +1,168 @@
+---
+title: Headings
+layout: design-system
+meta-info: false
+categories:
+- styles
+excerpt: "Headings create hierarchy for content."
+---
+
+
+<p>Use headings to create a hierarchy for content.</p>
+
+<p>Write all headings in sentence case.</p>
+
+<p>Page titles should be formatted as <strong>extra large</strong> headings. Other headings should be formatted as <strong>large</strong> headings first, and then in decreasing size order.</p>
+
+<p>Always use headings in decreasing size order; don't skip heading sizes or use headings when you should use paragraph text.</p>
+
+<h2>Extra large heading</h2>
+
+<details>
+    <summary>Formatted example</summary>
+    <h1>Extra large heading</h1>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+    <pre><code>&lt;h1&gt;Extra large heading&lt;/h1&gt;</code></pre>
+</details>
+
+<details>
+    <summary>Markdown</summary>
+    <pre><code># Extra large heading</code></pre>
+</details>
+
+<h2>Large heading</h2>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <h2>Large heading</h2>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+    <pre><code>&lt;h2&gt;Large heading&lt;/h2&gt;</code></pre>
+</details>
+
+<details>
+    <summary>Markdown</summary>
+    <pre><code>## Large heading</code></pre>
+</details>
+
+<h2>Medium heading</h2>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <h3>Medium heading</h3>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;h3&gt;Medium heading&lt;/h3&gt;</code></pre>
+</details>
+
+<details>
+    <summary>Markdown</summary>
+    <pre><code>### Medium heading</code></pre>
+</details>
+
+<h2>Small heading</h2>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <h4>Small heading</h4>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;h4&gt;Small heading&lt;/h4&gt;</code></pre>
+</details>
+
+<details>
+    <summary>Markdown</summary>
+
+    <pre><code>#### Small heading</code></pre>
+</details>
+
+
+<h1>Headings with captions</h1>
+
+<p>Sometimes you may need to make it clear that a page is part of a larger section or group. To do this, you can use a heading with a caption above it.</p>
+
+
+<h2>Extra large heading with caption</h2>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <span class="caption-xl">Extra large caption</span>
+    <h1>Extra large heading</h1>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;span class="caption-xl"&gt;Extra large caption&lt;/span&gt;
+&lt;h1&gt;Extra large heading&lt;/h1&gt;</code></pre>
+</details>
+
+
+<h2>Large heading with caption</h2>
+<details>
+    <summary>Formatted example</summary>
+
+    <span class="caption-lg">Large caption</span>
+    <h2>Large heading</h2>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;span class="caption-lg"&gt;Large caption&lt;/span&gt;
+&lt;h2&gt;Large heading&lt;/h2&gt;</code></pre>
+</details>
+
+
+<h2>Medium heading with caption</h2>
+
+<details>
+    <summary>Formatted example</summary>
+
+    <span class="caption-md">Medium caption</span>
+    <h3>Medium heading</h3>
+</details>
+
+<details>
+    <summary>HTML code</summary>
+
+    <pre><code>&lt;span class="caption-md"&gt;Medium caption&lt;/span&gt;
+&lt;h3&gt;Medium heading&lt;/h3&gt;</code></pre>
+</details>
+
+<h2>Override captions</h2>
+
+<p>You can override the default caption generated as part of the header in the page front matter.</p>
+
+<h3>Deactivate caption</h3>
+
+<p>To hide the caption, and only show the page heading, set <code>caption</code> to <code>false</code>.</p>
+
+<details>
+    <summary>Markdown</summary>
+    <pre><code>caption: false</code></pre>
+</details>
+
+<h3>Custom caption</h3>
+
+<p>To change the caption text, set <code>caption</code> to any text string inside quotes.</p>
+
+<details>
+    <summary>Markdown</summary>
+    <pre><code>caption: "Custom caption"</code></pre>
+</details>

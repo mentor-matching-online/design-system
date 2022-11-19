@@ -10,13 +10,13 @@ This design system provides examples of components and styles that can help you 
 
 It contains components and styles, with formatted examples, HTML code and Markdown code that you can copy and paste to speed up the creation of your website, service or page.
 
-## [Components](/design-system/components)
-
-Save time with reusable, accessible components for forms, navigation, panels, tables and more.
-
 ## [Styles](/design-system/styles)
 
 Make your service look like the Mentor Matching Online brand with guides for applying layout, typography, colour and images.
+
+## [Components](/design-system/components)
+
+Save time with reusable, accessible components for forms, navigation, panels, tables and more.
 
 ---
 

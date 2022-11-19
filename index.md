@@ -18,7 +18,7 @@ Save time with reusable, accessible components for forms, navigation, panels, ta
 
 ## Styles
 
-Make your service look like the Civil Service LGBT+ Network brand with guides for applying layout, typography, colour and images.
+Make your service look like the Mentor Matching Online brand with guides for applying layout, typography, colour and images.
 
 ---
 
